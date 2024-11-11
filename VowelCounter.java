@@ -22,7 +22,7 @@ public class VowelCounter {
         int vowelCount = 0;
 
         System.out.print("Enter word (type 0 to quit): ");
-        String inputString = scan.nextLine();
+        String inputString = scan.nextLine().trim().replace(" ","");
 
         if (inputString.equals("0")){
             System.out.println("Program has ended.\n");
@@ -43,7 +43,8 @@ public class VowelCounter {
                     " letters and " + vowelCount + " vowel.\n");
         } else {
             System.out.println("\"" + inputString + "\" has " + inputString.length() +
-                    " letters and " + vowelCount + " vowels.\n");        }
+                    " letters and " + vowelCount + " vowels.\n");
+        }
 
         return countVowels(scan);
     }
