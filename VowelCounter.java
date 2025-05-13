@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class VowelCounter {
     public static void main(String[] args) {
 
+        // version 2.0
+
         Scanner scanner = new Scanner(System.in);
 
         boolean stillRunning = true;
@@ -41,9 +43,9 @@ public class VowelCounter {
 
         scanner.close();
     }
+
     public static void vowelRules(){
         System.out.println("Type any word for vowel count");
-        System.out.println("Type '0' to exit'\n");
-
+        System.out.println("Type '0' to exit\n");
     }
 }
